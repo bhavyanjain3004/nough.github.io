@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import { Link } from 'lucide-react'
+import { MenuIcon } from 'lucide-react'
+import Link from 'next/link'
+import { UserButton } from '@clerk/nextjs'
+
 
 
 type Props = {}
@@ -49,7 +52,12 @@ type Props = {}
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
             {true ? 'Dashboard' : 'Get Started'}
           </span>
-        </Link>
+             </Link>
+             {
+              
+             }
+             <UserButton />
+             <MenuIcon className="md:hidden"/>
              </aside>
              </header>
       )
